@@ -1,7 +1,18 @@
 package main
 
-import "fmt"
+import (
+	"log"
+	"os"
+)
 
 func main() {
-	fmt.Println("Hello from Topik6PackageOs")
+	file, err := os.Create("data.js")
+
+	if err != nil {
+		log.Fatal("Gagal membuat file", err)
+	}
+	defer file.Close()
+
+	file.WriteString("function gokilsih")
+
 }
