@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
-	fmt.Println("Hello from Topik4PackageStrconv")
+	angka10 := 10
+	angka := strconv.Itoa(angka10)
+	fmt.Println(angka)
 }
