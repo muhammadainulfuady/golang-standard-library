@@ -20,7 +20,7 @@ func kindStruct(field any) reflect.Kind {
 }
 
 func jumlahField(data any) int {
-	return reflect.ValueOf(data).NumField()
+	return reflect.TypeOf(data).NumField()
 }
 
 func cekStruct(data any) {
